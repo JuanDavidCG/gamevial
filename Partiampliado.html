@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta charset='utf-8'/>
+	<title>Participantes</title>
+	<!-- style -->
+
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- style -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <link href="css/fonts.css" rel="stylesheet" type="text/css">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+
+	<style>
+		/* styles unrelated to zoom */
+		* { border:0; margin:0; padding:0; }
+		
+
+		/* these styles are for the demo, but are not required for the plugin */
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+			background:url(icon.png);
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
+	</style>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	<script src='js/jquery.zoom.js'></script>
+	<script>
+		$(document).ready(function(){
+			
+			$('#ex2').zoom({ on:'grab' });
+			
+		});
+	</script>
+</head>
+<body>
+	
+            <header role="header">
+
+                <div class="container">
+
+                    <!-- logo -->
+
+                        <h1>
+
+                            <a href="index.html" title="Game Vial"><img src="images/logo.png" title="Game Vial" alt="Game Vial"/></a>
+
+                        </h1>
+
+                    <!-- logo -->
+
+                    <!-- nav -->
+
+                    <nav role="header-nav" class="navy">
+
+                        <ul>
+
+                            <li class="nav-active"><a href="index.html" title="Work">Home</a></li>
+
+                            <li><a href="about.html" title="Nosotros">Nosotros</a></li>
+
+                            <li><a href="Sinopsis.html" title="Sinopsis">Sinopsis</a></li>
+
+                            <li><a href="personajes.html" title="Personajes">Personajes</a></li>
+
+                            <!-- <li><a href="blog.html" title="Blog">Blog</a></li> -->
+
+
+                            <li><a href="contact.html" title="Contacto">Contacto</a></li>
+
+                        </ul>
+
+                    </nav>
+
+                    <!-- nav -->
+
+                </div>
+
+            </header>
+
+        <!-- header -->
+	<center>
+	<h3>Participantes</h3><br>
+	<center>Toca para ampliar</center><br><br>
+
+	
+	<span class='zoom' id='ex2'>
+		<img  src="images/about-images/Participantes.jpeg"  width='360' height='240' />
+		
+	</span>
+	</center>
+	
+</body>
+
+        <!-- footer -->
+
+        <footer role="footer">
+
+            <!-- logo -->
+
+                <h1>
+
+                    <a href="index.html" title="game vial"><img src="images/logo.png" title="Game Vial" alt="game vial"/></a>
+
+                </h1>
+
+            <!-- logo -->
+
+            <!-- nav -->
+
+            <nav role="footer-nav">
+
+                <ul>
+
+                    <li><a href="index.html" title="Home">Home</a></li>
+
+                    <li><a href="about.html" title="Nosotros">Nosotros</a></li>
+
+                    <li><a href="Sinopsis.html" title="Sinopsis">Sinopsis</a></li>
+
+                    <li><a href="personajes.html" title="Personajes">Personajes</a></li>
+
+                    <!-- <li><a href="blog.html" title="Blog">Blog</a></li> -->
+                    
+
+                    <li><a href="contact.html" title="Contacto">Contacto</a></li>
+
+                </ul>
+
+            </nav>
+
+            <!-- nav -->
+
+
+            
+
+            <p class="copy-right">&copy; 2018  Game Vial. Todos los derechos reservados</p>
+
+
+        </footer>
+
+        <!-- footer -->
+
+        <script src="js/nav.js" type="text/javascript"></script>
+
+        <script src="js/custom.js" type="text/javascript"></script>
+
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+		<script src="js/html5shiv.js" type="text/javascript"></script>
+</html>
